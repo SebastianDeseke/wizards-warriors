@@ -36,7 +36,7 @@ public class Battlefield
         int halfline = BattlefieldSize.Length / 2;
         spawnpointplayer1 = rnd.Next(BattlefieldSize[0], halfline);
         spawnpointplayer2 = rnd.Next(halfline + 1, BattlefieldSize[BattlefieldSize.Length - 1] + 1);
-        return "Your spawn point is " + spawnpointplayer1 + "     " + spawnpointplayer2;
+        return "Your spawn point is " + spawnpointplayer1 + "\t" + spawnpointplayer2;
     }
 
     public void Fight()
@@ -61,7 +61,7 @@ public class Battlefield
                     myPlayers.Warrior(Attackchoice);
                     break;
                 default:
-                    Console.WriteLine("You probably made a spelling mistake");
+                    Console.WriteLine("You probably made a spelling mistake!");
                     break;
             }
         } while (myPlayers.GetHealth() > 0);
