@@ -35,7 +35,6 @@ public class Player
     {
         mana = 200;
         strength = 50;
-        Console.WriteLine("You have chosen the way of the Wizard");
 
         switch (chosenAttack)
         {
@@ -58,7 +57,7 @@ public class Player
                 break;
             case 4:
                 Console.WriteLine("You have used Powershield");
-                damageinput = damageinput / 0;
+                damageinput = 0;
                 //denies you as player 1 turn
                 break;
 
@@ -69,7 +68,6 @@ public class Player
     {
         mana = 50;
         strength = 200;
-        Console.WriteLine("You have chosen the way of the Warrior");
 
         switch (chosenAttack)
         {

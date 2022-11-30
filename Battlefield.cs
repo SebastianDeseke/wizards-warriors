@@ -49,16 +49,19 @@ public class Battlefield
         switch (choice)
         {
             case "Wizard":
+            Console.WriteLine("You have chosen the way of the Wizard");
                 do
                 {
-                    Console.WriteLine("Choose your Attack: " + "\n" + "1 = Fireslash \n" + "2 = Ice Bullet \n");
-                    Attackchoice = Console.Read();
+                    Console.WriteLine("Choose your Attack: " + "\n" + "1 = Fireslash \n" + "2 = Ice Bullet \n3 = Enhance");
+                    Attackchoice = Console.ReadKey(true).KeyChar - 48;
                     myPlayers.Wizard(Attackchoice);
+
                 } while (myPlayers.GetHealth() > 0);
 
                 break;
 
             case "Warrior":
+            Console.WriteLine("You have chosen the way of the Warrior");
                 do
                 {
                     Console.WriteLine("Choose your Attack: ");
