@@ -1,5 +1,5 @@
 # wizards-warriors in C#
-The idea is a chess x Dungeons and Dragons x RPG type game
+The idea is a chess x Dungeons and Dragons x RPG type game.
 Basic idea is that the playing field is like a chessboard, and 2 teams spawn in the respective two halves of the map. Currently no GUI, only paying in text :)
 
 The Map
