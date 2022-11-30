@@ -24,7 +24,7 @@ public class Player
 
     public void SetHealth(int healthnow)
     {
-        healthnow = health;
+        health = healthnow;
     }
     public void determinExp()
     {
@@ -40,13 +40,15 @@ public class Player
         switch (chosenAttack)
         {
             case 1:
-                Console.WriteLine ("You have used Fireslash");
+                Console.WriteLine("You have used Fireslash");
                 //covers the 3 blocks infront of the player
+                damageoutput = 50;
                 distance = 2;
                 break;
             case 2:
                 Console.WriteLine("You have used Ice bullet");
                 distance = 10;
+                damageoutput = 60;
                 //loses damage over distance
                 break;
             case 3:
@@ -68,16 +70,19 @@ public class Player
         mana = 50;
         strength = 200;
         Console.WriteLine("You have chosen the way of the Warrior");
-        
+
         switch (chosenAttack)
         {
             case 1:
                 Console.WriteLine("You have used Slash attack");
                 //covers the 3 blocks infront of the character
+                damageoutput = 50;
+                distance = 2;
                 break;
             case 2:
                 Console.WriteLine("You have used Tornado slash");
                 //covers all blocks around the player
+                damageoutput = 30;
                 break;
             case 3:
                 Console.WriteLine("You have used Powerstance");

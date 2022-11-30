@@ -45,26 +45,34 @@ public class Battlefield
         Console.WriteLine("Wizard or Warrior?");
         choice = Console.ReadLine();
         int Attackchoice;
-        do
-        {
 
-            switch (choice)
-            {
-                case "Wizard":
+        switch (choice)
+        {
+            case "Wizard":
+                do
+                {
                     Console.WriteLine("Choose your Attack: " + "\n" + "1 = Fireslash \n" + "2 = Ice Bullet \n");
                     Attackchoice = Console.Read();
                     myPlayers.Wizard(Attackchoice);
-                    break;
-                case "Warrior":
+                } while (myPlayers.GetHealth() > 0);
+
+                break;
+
+            case "Warrior":
+                do
+                {
                     Console.WriteLine("Choose your Attack: ");
                     Attackchoice = Console.Read();
                     myPlayers.Warrior(Attackchoice);
-                    break;
-                default:
-                    Console.WriteLine("You probably made a spelling mistake!");
-                    break;
-            }
-        } while (myPlayers.GetHealth() > 0);
+                    
+                } while (myPlayers.GetHealth() > 0);
+
+                break;
+
+            default:
+                Console.WriteLine("You probably made a spelling mistake!");
+                break;
+        }
 
     }
 }
