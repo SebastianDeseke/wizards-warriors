@@ -56,6 +56,7 @@ public class Battlefield
                     Attackchoice = Console.ReadKey(true).KeyChar - 48;
                     myPlayers.Wizard(Attackchoice);
 
+
                 } while (myPlayers.GetHealth() > 0);
 
                 break;
