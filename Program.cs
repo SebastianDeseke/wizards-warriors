@@ -14,6 +14,7 @@ public class Sandbox
         Console.WriteLine("The battlefield is " + myBattlefield.FieldGenerator());
         Console.WriteLine("Spawn at: " + "\n" + myBattlefield.Spawnpoint());
         //myBattlefield.Fight();
-        newRender.GenerateField();
+        //newRender.GenerateField();
+        newRender.TestFieldCode();
     }
 }
